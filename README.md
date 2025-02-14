@@ -11,7 +11,7 @@ cd .../receipt-processor-challenge
 - Install Docker from [Docker](https://docs.docker.com/get-docker)
 - From the terminal Run the following commands
 ```
-docker build --nocache -t receipt-processor .
+docker build --no-cache -t receipt-processor .
 ```
 ### 3. Run the Docker Container
 ```commandline
