@@ -1,5 +1,5 @@
 import math
-from app.models.receipt_model import ReceiptDTO
+from src.models.receipt_model import ReceiptDTO
 
 def calculate_points(receipt: ReceiptDTO):
     """

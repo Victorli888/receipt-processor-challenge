@@ -1,7 +1,7 @@
 from flask import Blueprint, jsonify, request
-from app.models.receipt_model import ReceiptDTO
-from app.service.point_evaluator import calculate_points
-from app.service.receipt_storage import save_receipt_evaluation, get_total_points
+from src.models.receipt_model import ReceiptDTO
+from src.service.point_evaluator import calculate_points
+from src.service.receipt_storage import save_receipt_evaluation, get_total_points
 import uuid
 
 receipt_bp = Blueprint('receipts', __name__)
