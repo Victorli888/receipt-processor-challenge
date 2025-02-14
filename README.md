@@ -1,5 +1,29 @@
 # Receipt Processor
 
+## Deployment Steps
+### 1. Clone the Repo using the terminal
+```
+cd .../<intended-file-path>/
+git clone https://github.com/Victorli888/receipt-processor-challenge.git
+cd .../receipt-processor-challenge
+```
+### 2. Build using Docker
+- Install Docker from [Docker](https://docs.docker.com/get-docker)
+- From the terminal Run the following commands
+```
+docker build --nocache -t receipt-processor .
+```
+### 3. Run the Docker Container
+```commandline
+docker run -p 8888:5000 receipt-processor
+```
+
+### 4. Consume receipt-processor api using Postman or Insomina, etc
+Consume the receipt-processor api using the following url, use the HTTP Requests outlined in the api.yml file
+- http://localhost:8888/ or http://127.0.0.1:8888/
+
+
+## Instructions
 Build a webservice that fulfils the documented API. The API is described below. A formal definition is provided 
 in the [api.yml](./api.yml) file. We will use the described API to test your solution.
 
